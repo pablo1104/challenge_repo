@@ -1,0 +1,18 @@
+{
+  "name": "task2",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Pablo Alba"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

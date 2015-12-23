@@ -1,0 +1,1 @@
+define(["marionette"],function(Marionette){var Router=Marionette.AppRouter.extend({appRoutes:{"":"defaultRoute","filter/:category":"filterCategory"}});return Router});

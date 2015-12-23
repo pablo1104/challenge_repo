@@ -1,0 +1,95 @@
+$body-background: #262626;
+$container-background: #ffffff;
+$container_div-background: #F7F6F5;
+$color-item: #e5e5e5;
+$color-item-norm: #F2F2F2;
+$sizes-hs :(1 : 4.8rem,
+			2 : 4.0rem,
+			3 : 3.4rem,
+			4 : 3.0rem 
+			);
+
+
+body{
+	background-color:$body-background;
+}
+.container {
+	background-color:$container-background;
+	
+	.sub_container {
+		background-color:$container_div-background;
+		padding: 1rem;
+	}
+}
+
+@each $key, $value in $sizes-hs{
+	h#{$key} {
+		font-size: $value;
+	}
+}
+
+h1{
+	text-align:center;
+}
+
+
+#mapContainer {
+    width: 100%;
+    height: 70vh;
+}
+.filters {
+	fieldset {
+		border-width:1px;
+		padding:1rem 1rem 1rem 1rem;
+		legend {
+			font-size:3.4rem;
+			font-weight: 300;
+		}
+	}
+
+	form {
+		margin-bottom:0.5rem;
+	}
+
+
+}
+#crimes {
+
+	
+	cursor:pointer;
+	opacity:0;
+  	transition:opacity 2s linear;
+  	height: 0;
+	ul li {
+		cursor: pointer;
+		list-style-type:none;
+		margin-bottom: 0rem;
+		padding: 1rem 1rem 1rem 1rem;
+		background-color: $color-item-norm;
+		border-radius: 1rem;
+		text-align:center;
+		
+
+		&:hover{
+			background-color: $color-item;
+		}
+		&.active {
+			background-color: $color-item;	
+		}
+	}
+}
+
+#show,#hide {
+	display:none;
+}
+
+
+#show:checked ~ #crimes {
+	//display:block;
+	opacity:1;
+	height: auto;
+}
+
+#hide:checked ~ #crimes {
+	display:none;
+}

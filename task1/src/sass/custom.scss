@@ -1,0 +1,24 @@
+/** Custom styles for TODO App ***/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+$bg-color:#262626;
+$sec-color:#4d4d4d;
+$font-color:#ffffff;
+$body-font-family: 'Lato', sans-serif;
+
+body {
+	font: 12px $body-font-family;
+	background: $bg-color none repeat scroll 0% 0%;
+	color: $font-color;
+}
+#todoapp {
+	background: $sec-color;
+
+	box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.6),
+	            0 25px 50px 0 rgba(255, 255, 255, 0.3);
+
+	h1 {
+		color: rgba(255, 255, 255, 0.8);
+		font-size: 60px;
+	}
+}

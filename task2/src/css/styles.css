@@ -1,0 +1,102 @@
+/* line 13, ../scss/styles.scss */
+body {
+  background-color: #262626;
+}
+
+/* line 16, ../scss/styles.scss */
+.container {
+  background-color: #ffffff;
+}
+/* line 19, ../scss/styles.scss */
+.container .sub_container {
+  background-color: #F7F6F5;
+  padding: 1rem;
+}
+
+/* line 26, ../scss/styles.scss */
+h1 {
+  font-size: 4.8rem;
+}
+
+/* line 26, ../scss/styles.scss */
+h2 {
+  font-size: 4rem;
+}
+
+/* line 26, ../scss/styles.scss */
+h3 {
+  font-size: 3.4rem;
+}
+
+/* line 26, ../scss/styles.scss */
+h4 {
+  font-size: 3rem;
+}
+
+/* line 31, ../scss/styles.scss */
+h1 {
+  text-align: center;
+}
+
+/* line 36, ../scss/styles.scss */
+#mapContainer {
+  width: 100%;
+  height: 70vh;
+}
+
+/* line 41, ../scss/styles.scss */
+.filters fieldset {
+  border-width: 1px;
+  padding: 1rem 1rem 1rem 1rem;
+}
+/* line 44, ../scss/styles.scss */
+.filters fieldset legend {
+  font-size: 3.4rem;
+  font-weight: 300;
+}
+/* line 50, ../scss/styles.scss */
+.filters form {
+  margin-bottom: 0.5rem;
+}
+
+/* line 56, ../scss/styles.scss */
+#crimes {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 2s linear;
+  height: 0;
+}
+/* line 63, ../scss/styles.scss */
+#crimes ul li {
+  cursor: pointer;
+  list-style-type: none;
+  margin-bottom: 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #F2F2F2;
+  border-radius: 1rem;
+  text-align: center;
+}
+/* line 73, ../scss/styles.scss */
+#crimes ul li:hover {
+  background-color: #e5e5e5;
+}
+/* line 76, ../scss/styles.scss */
+#crimes ul li.active {
+  background-color: #e5e5e5;
+}
+
+/* line 82, ../scss/styles.scss */
+#show, #hide {
+  display: none;
+}
+
+/* line 87, ../scss/styles.scss */
+#show:checked ~ #crimes {
+  opacity: 1;
+  height: auto;
+}
+
+/* line 93, ../scss/styles.scss */
+#hide:checked ~ #crimes {
+  display: none;
+}
