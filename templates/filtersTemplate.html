@@ -1,0 +1,21 @@
+<form name="search">
+<div class="row">
+	<fieldset>
+		<legend>Filters</legend>
+    <div class="twelve columns">
+    	  <label for="category">Category</label>	
+		  <select id="category" name="category" class="u-full-width" >
+		 	<option>Select a category</option>
+		 	{{#each options_cats }}
+		 		<option value="{{this}}" {{#equal this ../selected}}selected{{/equal}}>{{this}}</option>
+		 	{{/each}}
+		 </select>
+	</div>
+	</fieldset>
+</div>
+<div class="row">
+    <div class="twelve columns">	 
+		<input type="submit" value="search" class="button-primary">
+	</div>
+</div>		
+</form>
